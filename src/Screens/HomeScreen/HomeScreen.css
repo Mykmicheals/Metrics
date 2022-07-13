@@ -1,0 +1,65 @@
+.form{
+    margin: auto;
+    width: 35%;
+}
+
+.name-input{
+    border: 0;
+    outline: 0;
+    margin: 1rem;
+    background-color:#180036 ;
+    border-bottom: 3px solid #35274D;
+    padding: .6rem;
+    color: #fff;
+}
+
+.email-form{
+    margin-top: 3rem;
+}
+
+
+
+.email-input{
+
+height: 2.6rem;
+width: 14rem;
+border-radius: 2.6rem;
+outline: 0;
+padding: 0 2rem;
+border: 0;
+}
+
+#form-button{
+    height: 2.6rem;
+    border-radius: 2.6rem;
+    padding: 0 1rem;
+    color: #fff;
+    border: 0;
+   background-color: #271AC1;
+   margin-left: -50px;
+}
+
+.clock-card {
+    width: 5rem;
+    height: 6rem;
+    text-align: center;
+    margin: auto;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    margin: 1rem .2rem;
+}
+
+.clock-card p {
+    font-weight: 700;
+}
+
+.clock-timer {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    text-align: center;
+   
+
+}
