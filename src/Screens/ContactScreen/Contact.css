@@ -1,0 +1,33 @@
+.home-contact{
+padding: 4rem;
+margin: auto;
+width: 60%;
+background-color: #200043;
+position: relative;
+}
+
+.home-contact-form{
+    margin-top: 2rem;
+}
+
+.home-contact-form input{
+    width: 23rem;
+    height: 0.7rem;
+    padding: 1.3rem;
+    border-radius: 8px;
+    display: block;
+    margin: 1.5rem 0;
+    border: 0;
+}
+
+#home-contact-arrow{
+    position: absolute;
+    top: 20%;
+    left: -5%;
+    background-color: #ffffff;
+    width: 2rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding: 1rem;
+}

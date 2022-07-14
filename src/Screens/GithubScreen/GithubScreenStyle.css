@@ -1,0 +1,19 @@
+.github-list{
+background-color: #fff;
+    color: black;
+    width: 59%;
+    margin:2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+box-shadow: 15px -15px 5px rgba(0, 0, 0, 2);
+
+}
+
+.github-list img{
+    width:23rem;
+    height: 14rem;
+}
+
+.github-page{
+    background-image: linear-gradient(to bottom, #20376A, #1F3467, #1D2053, #1A1044);
+}

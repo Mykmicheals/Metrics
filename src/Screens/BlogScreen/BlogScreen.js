@@ -70,6 +70,7 @@ function BlogScreen() {
                 <i id='arrow-icon'><Icon icon="bi:arrow-right" color="#d105d4" inline={true} /></i>
                 <div className='blog-buttom-effect'></div>
             </div>
+
         </div>
     )
 }
