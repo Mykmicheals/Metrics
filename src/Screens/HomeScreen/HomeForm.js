@@ -8,10 +8,10 @@ function HomeForm() {
                 <input className='name-input' placeholder='First Name' type='text' />
                 <input className='name-input' placeholder='Last Name' type='text' />
                 <div className='email-form'>
-                    <input placeholder='Enter Your email address' className='email-input' />   
+                    <input placeholder='Enter Your email address' className='email-input' />
                     <button id='form-button'>Join Our Waiting List</button>
-              </div>
-               
+                </div>
+
             </form>
 
         </div>
