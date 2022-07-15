@@ -8,15 +8,22 @@ import TimeCard from './TimeCard'
 
 function HomeScreen() {
     const appCtx = useContext(AppContext)
-   const showContact = appCtx.showContactPage
+    const showContact = appCtx.showContactPage
+    const blurStyle = showContact ? 'blur-effect' : ''
+    
+ 
     return (
-        <div className='everything'>
-          <div className='home-screen'>
+        <div className='everything-home'>
+          <div className={`home-screen ${blurStyle}`}>
                 <Header />
                 <div className='homescreen-text'>
+                    <div className='home-circle-1'></div>
+                    <div className='home-circle-2'></div>
+                    <div className='home-circle-3'></div> 
                     <h2> something awesome is comming</h2>
                     <p>Your All in one affiliate marketing software track, automate and optimize your campaigns </p>
                 </div>
+            
                 <TimeCard />
                 <HomeForm />
            
@@ -26,6 +33,7 @@ function HomeScreen() {
             <div className='contact-overlay'>
                 {showContact && <Contact />}
             </div>
+            <div className='home-semi-circle'></div>
         </div>
 
     )

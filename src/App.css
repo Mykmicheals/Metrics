@@ -12,53 +12,57 @@ a:-webkit-any-link {
   color: inherit;
 }
 
-li{
+li {
   list-style: none;
 }
 
-h1{
+h1 {
   margin: 0;
   padding: 0;
 }
 
 
-.header{
+.header {
   display: grid;
   grid-template-columns: 40% 60%;
 }
 
-.logo{
-margin: 2rem;
-font-size: 1.4rem;
+.header-nav{
+  display: flex;
 }
 
-.navigation{
+.logo {
+  margin: 2rem;
+  font-size: 1.4rem;
+}
+
+.navigation {
   display: flex;
   flex-direction: row;
   margin-left: 17rem;
 }
 
-.header-li{
+.header-li {
   padding-top: .5rem;
 }
 
-.navigation li{
+.navigation li {
   margin: 1.5rem;
   list-style: none;
   font-size: 0.7rem;
 }
 
-.header-contact-btn{
-  background-color:#271AC1;
+.header-contact-btn {
+  background-color: #271AC1;
   padding: .8rem 1.7rem;
-
+  cursor: pointer;
   border-radius: 2rem;
 
 }
 
 
 
-.general-btn{
+.general-btn {
   background-color: #7C0FD5;
   padding: 1rem;
   border: 0;
@@ -69,26 +73,50 @@ font-size: 1.4rem;
 }
 
 
-.footer{
-  margin-top: 4rem;
+.footer {
+  margin-top: 10rem;
   text-align: center;
+  position: relative;
+  z-index: 100;
 }
 
-.footer-icons i{
+.footer-icons i {
   font-size: 1.15rem;
   margin: 1rem;
   color: rgba(255, 255, 255, 0.4);
 
 }
 
-.footer-small{
-  margin:1rem 0 2rem ;
+.footer-small {
+  margin: 1rem 0 2rem;
   font-weight: 200;
 }
-.footer-small small{
+
+.footer-small small {
   margin: 1.5rem
 }
 
-.footer p{
+.footer p {
   font-weight: 100;
+}
+
+.menu-icon{
+  margin-top: 2rem;
+  font-size: 2rem;
+  display: block;
+  position: absolute;
+  right: 15%;
+}
+
+.show-menu.icon{
+display: block;
+}
+
+.show-menu{
+  display: block;
+}
+
+.hide-menu{
+  display: none;
+ 
 }

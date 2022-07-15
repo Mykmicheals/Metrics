@@ -6,6 +6,7 @@ import BlogCard from './BlogCard';
 import manImage from '../../assets/images/work.png'
 import Button from '../../Components/Button';
 
+
 function BlogScreen() {
     return (
         <div className='blog-screen'>
@@ -64,7 +65,7 @@ function BlogScreen() {
                 <Button >Load more</Button>
             </div>
             <div className='blog-bottom'>
-                <h3>What to know about metrics ?</h3>  
+                <h3>What to know about metrics ?</h3>
                 <p>Learn who we are and what drives us</p>
                 <small>Contact Us</small>
                 <i id='arrow-icon'><Icon icon="bi:arrow-right" color="#d105d4" inline={true} /></i>

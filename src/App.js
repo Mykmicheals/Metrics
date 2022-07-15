@@ -1,15 +1,26 @@
 
 import './App.css';
-import { Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen/HomeScreen';
 import BlogScreen from './Screens/BlogScreen/BlogScreen';
 import GithubPage from './Screens/GithubScreen/GithubFetchLogic';
+import AboutPage from './Screens/AboutScreen/AboutPage';
+import { useHistory } from 'react-router-dom'
+
+
 
 
 function App() {
+ var history = useHistory()
+
+  // useEffect(() => {
+  //   history.push('/comingsoon')
+  // }, [history])
+
   return (
-    <div>
-      <Route Route path='/' exact>
+    <Router>
+      <Switch>
+      <Route path='/comingsoon' exact>
         <HomeScreen />
       </Route>
       <Route Route path='/blog' >
@@ -18,8 +29,12 @@ function App() {
       <Route path='/github'>
         <GithubPage />
       </Route>
-
-    </div>
+      <Route path='/about'>
+      <AboutPage />
+      </Route>
+        <Redirect from="*" to="/comingsoon" />
+      </Switch>
+    </Router>
   )
 }
 

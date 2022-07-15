@@ -1,18 +1,22 @@
+.everything-home {
+    background-image: linear-gradient(to bottom, #1C003E 10%, #13012E);
+    position: relative;
+}
+
 .form {
     margin: auto;
     width: 35%;
 }
 
-/* .home-screen {
-  
-filter: blur(5px);
--webkit-filter: blur(5px);
-backdrop-filter: blur(10px);
-} */
+.blur-effect {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    backdrop-filter: blur(10px);
+}
 
 .contact-overlay {
     position: absolute;
-    right: -5%;
+    right: -10%;
     top: 0%;
 }
 
@@ -20,6 +24,12 @@ backdrop-filter: blur(10px);
     margin: auto;
     width: 38%;
     text-align: center;
+}
+
+@media (max-width:1000px) {
+    .homescreen-text {
+        width: 60%;
+    }
 }
 
 .homescreen-text h2 {
@@ -45,10 +55,41 @@ backdrop-filter: blur(10px);
 }
 
 .email-form {
-    margin-top: 3rem;
+    margin-top: 1rem;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-3rem);
+    }
 }
 
 
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.email-form-slide-down {
+    animation: slide-down 1000ms ease-out forwards;
+}
+
+.email-form-slide-up {
+    animation: slide-up 1000ms ease-out forwards;
+}
 
 .email-input {
 
@@ -78,7 +119,7 @@ backdrop-filter: blur(10px);
     background-color: #fff;
     color: black;
     border-radius: 5px;
-    margin: 1rem .2rem;
+    margin: 1rem auto;
 }
 
 .clock-card p {
@@ -91,6 +132,81 @@ backdrop-filter: blur(10px);
     grid-template-columns: repeat(4, 1fr);
     margin: auto;
     text-align: center;
+}
 
+.home-circle-1 {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #6B196E, #1C003E);
+    position: absolute;
+    left: 20%;
+}
+
+.home-circle-2 {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #1E295C, #1C003E);
+    position: absolute;
+    right: 20%;
+    top: 35%;
+}
+
+@media (max-width:1000px) {
+    .home-circle-1 {
+        left: 10%;
+    }
+
+    .home-circle-2 {
+        top: 20%;
+        right: 10%;
+    }
+
+    .clock-timer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .home-circle-1 {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+
+    .form {
+        width: 95%;
+
+    }
+}
+
+.home-circle-3 {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #6D3729, #1C003E);
+    position: absolute;
+    left: 30%;
+    top: 80%;
+}
+
+.home-semi-circle {
+    position: absolute;
+    top: 93.6%;
+    left: 50%;
+    /* filter: blur(4px); */
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: 60rem;
+    border-radius: 50% 50% 0 0/ 100% 100% 0 0;
+    background-color: #4B3366;
+    border: 0.3px solid rgb(124, 122, 122);
 
 }

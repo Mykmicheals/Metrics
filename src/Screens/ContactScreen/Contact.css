@@ -1,9 +1,29 @@
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.home-slide-down{
+animation: slide-down 300ms ease-out forwards;
+}
+
 .home-contact{
 padding: 4rem;
 margin: auto;
 width: 60%;
 background-color: #200043;
 position: relative;
+animation: slide-down 300ms ease-out forwards;
+
 }
 
 .home-contact-form{
@@ -16,7 +36,7 @@ position: relative;
     padding: 1.3rem;
     border-radius: 8px;
     display: block;
-    margin: 1.5rem 0;
+    margin: 1.4rem 0;
     border: 0;
 }
 
@@ -30,4 +50,19 @@ position: relative;
     border-radius: 50%;
     font-size: 2rem;
     padding: 1rem;
+    cursor: pointer;
+}
+
+.home-contact textarea{
+    height: 6rem;
+    margin-top: 2rem;
+    width: 23rem;
+    padding: 1.3rem;
+    border-radius: 8px;
+}
+
+#contact-overlay-btn{
+    width: 30%;
+    margin-top: 2rem;
+    text-transform: uppercase;
 }
