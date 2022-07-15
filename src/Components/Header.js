@@ -6,16 +6,14 @@ import AppContext from '../Store/Context';
 
 function Header() {
     const [isMobile, setIsMobile] = useState(false)
-    const [hideNav, setHideNav] = useState(false)
-
 
     const handleResize = () => {
         if (window.innerWidth < 1200) {
             setIsMobile(true)
-            setHideNav(true)
+
         } else {
             setIsMobile(false)
-            setHideNav(false)
+
         }
     }
 
@@ -26,7 +24,11 @@ function Header() {
 
     useEffect(() => {
         window.addEventListener("resize", handleResize)
-    })
+    }, [])
+
+    const showNavHandler = () => {
+        appCtx.showNavHandler()
+    }
 
     const headerStyle = isMobile ? 'header-nav' : 'header'
     const navStyle = isMobile ? 'hide-menu' : 'show-menu'
@@ -52,8 +54,9 @@ function Header() {
             </div>
 
             <span className={`menu-icon ${menuStyle}`}>
-                <Icon icon="heroicons-outline:menu-alt-3" color="white" />
+                <Icon onClick={showNavHandler} icon="heroicons-outline:menu-alt-3" color="white" />
             </span>
+        
         </div>
     )
 }

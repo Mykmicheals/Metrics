@@ -27,7 +27,7 @@ h1 {
   grid-template-columns: 40% 60%;
 }
 
-.header-nav{
+.header-nav {
   display: flex;
 }
 
@@ -57,6 +57,8 @@ h1 {
   padding: .8rem 1.7rem;
   cursor: pointer;
   border-radius: 2rem;
+  width: 5rem;
+  text-align: center;
 
 }
 
@@ -100,7 +102,7 @@ h1 {
   font-weight: 100;
 }
 
-.menu-icon{
+.menu-icon {
   margin-top: 2rem;
   font-size: 2rem;
   display: block;
@@ -108,15 +110,53 @@ h1 {
   right: 15%;
 }
 
-.show-menu.icon{
-display: block;
-}
-
-.show-menu{
+.show-menu.icon {
   display: block;
 }
 
-.hide-menu{
+.show-menu {
+  display: block;
+}
+
+.hide-menu {
   display: none;
- 
+
+}
+
+.responsive-nav {
+  position: absolute;
+  top: 1%;
+  height: 100%;
+  width: 100%;
+
+  z-index: 999;
+  background-color: #180036;
+  animation: slide-right 900ms ease-out forwards;
+}
+
+.responsive-nav li {
+  margin: 40%;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.nav-cancel{
+  position: absolute;
+  top: 1%;
+/* right: -4%; */
+left: 80%;
+font-size: 3rem;
+
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

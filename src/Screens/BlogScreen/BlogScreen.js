@@ -5,11 +5,14 @@ import _ from "lodash";
 import BlogCard from './BlogCard';
 import manImage from '../../assets/images/work.png'
 import Button from '../../Components/Button';
+import Header from '../../Components/Header';
 
 
 function BlogScreen() {
     return (
+
         <div className='blog-screen'>
+            <Header />
             <div className='blog-bottom'>
                 <h3>Articles and News</h3>
                 <small>Blog</small>

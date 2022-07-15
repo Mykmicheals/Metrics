@@ -12,25 +12,25 @@
 
 
 
-.home-slide-down{
-animation: slide-down 300ms ease-out forwards;
+.home-slide-down {
+    animation: slide-down 300ms ease-out forwards;
 }
 
-.home-contact{
-padding: 4rem;
-margin: auto;
-width: 60%;
-background-color: #200043;
-position: relative;
-animation: slide-down 300ms ease-out forwards;
+.home-contact {
+    padding: 4rem;
+    margin: auto;
+    width: 60%;
+    background-color: #200043;
+    position: relative;
+    animation: slide-down 300ms ease-out forwards;
 
 }
 
-.home-contact-form{
+.home-contact-form {
     margin-top: 2rem;
 }
 
-.home-contact-form input{
+.home-contact-form input {
     width: 23rem;
     height: 0.7rem;
     padding: 1.3rem;
@@ -40,7 +40,7 @@ animation: slide-down 300ms ease-out forwards;
     border: 0;
 }
 
-#home-contact-arrow{
+#home-contact-arrow {
     position: absolute;
     top: 20%;
     left: -5%;
@@ -53,7 +53,7 @@ animation: slide-down 300ms ease-out forwards;
     cursor: pointer;
 }
 
-.home-contact textarea{
+.home-contact textarea {
     height: 6rem;
     margin-top: 2rem;
     width: 23rem;
@@ -61,7 +61,7 @@ animation: slide-down 300ms ease-out forwards;
     border-radius: 8px;
 }
 
-#contact-overlay-btn{
+#contact-overlay-btn {
     width: 30%;
     margin-top: 2rem;
     text-transform: uppercase;
