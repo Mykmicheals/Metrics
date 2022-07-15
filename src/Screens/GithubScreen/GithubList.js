@@ -15,7 +15,7 @@ function GithubList({ data }) {
                         <div>
                             <p>Repo Name: {each.name}</p>
                             <p>Description:{each.description}</p>
-                            <p>stars: {stars }</p>
+                            <p>stars: {each.stargazers_count }</p>
                             <p>Issues: {each.open_issues_count}</p>
                         </div>
 
