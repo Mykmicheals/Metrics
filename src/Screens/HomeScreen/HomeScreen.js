@@ -37,7 +37,7 @@ function HomeScreen() {
             </div>
             {appCtx.showNav && <NavBar />}
 
-            <div className='home-semi-circle'></div>
+            {/* <div className='home-semi-circle'></div> */}
         </div>
 
     )

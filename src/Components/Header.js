@@ -56,7 +56,7 @@ function Header() {
             <span className={`menu-icon ${menuStyle}`}>
                 <Icon onClick={showNavHandler} icon="heroicons-outline:menu-alt-3" color="white" />
             </span>
-        
+
         </div>
     )
 }
