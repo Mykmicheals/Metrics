@@ -42,6 +42,12 @@ h1 {
   margin-left: 17rem;
 }
 
+@media (max-width:768px) {
+  .navigation{
+    display: none;
+  }
+}
+
 .header-li {
   padding-top: .5rem;
 }
@@ -102,12 +108,20 @@ h1 {
   font-weight: 100;
 }
 
+
+
 .menu-icon {
   margin-top: 2rem;
   font-size: 2rem;
-  display: block;
+  display: none;
   position: absolute;
   right: 15%;
+}
+
+@media (max-width:768px) {
+  .menu-icon {
+    display: block;
+  }
 }
 
 .show-menu.icon {

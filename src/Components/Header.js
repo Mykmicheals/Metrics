@@ -7,34 +7,19 @@ import AppContext from '../Store/Context';
 function Header() {
     const [isMobile, setIsMobile] = useState(false)
 
-    const handleResize = () => {
-        if (window.innerWidth < 1200) {
-            setIsMobile(true)
-
-        } else {
-            setIsMobile(false)
-
-        }
-    }
-
     const appCtx = useContext(AppContext)
     const showContactHandler = () => {
         appCtx.showContactHandler()
     }
 
-    useEffect(() => {
-        window.addEventListener("resize", handleResize)
-    }, [])
-
     const showNavHandler = () => {
         appCtx.showNavHandler()
     }
 
-    const headerStyle = isMobile ? 'header-nav' : 'header'
     const navStyle = isMobile ? 'hide-menu' : 'show-menu'
-    const menuStyle = isMobile ? 'show-menu-icon' : 'hide-menu'
+  
     return (
-        <div className={headerStyle}>
+        <div className='header'>
             <Link to='/comingsoon'>
                 <h1 className='logo'>METRICKS</h1>
             </Link>
@@ -53,7 +38,7 @@ function Header() {
                 </ul>
             </div>
 
-            <span className={`menu-icon ${menuStyle}`}>
+            <span className='menu-icon'>
                 <Icon onClick={showNavHandler} icon="heroicons-outline:menu-alt-3" color="white" />
             </span>
 

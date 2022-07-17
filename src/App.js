@@ -1,21 +1,19 @@
-
+import { useContext } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen/HomeScreen';
 import BlogScreen from './Screens/BlogScreen/BlogScreen';
 import GithubPage from './Screens/GithubScreen/GithubFetchLogic';
 import AboutPage from './Screens/AboutScreen/AboutPage';
-import { useHistory } from 'react-router-dom'
+import NavBar from './Components/NavBar';
+import AppContext from './Store/Context';
 
 
 
 
 function App() {
- var history = useHistory()
 
-  // useEffect(() => {
-  //   history.push('/comingsoon')
-  // }, [history])
+const appCtx = useContext(AppContext)
 
   return (
     <Router>
@@ -34,6 +32,7 @@ function App() {
       </Route>
         <Redirect from="*" to="/comingsoon" />
       </Switch>
+      {appCtx.showNav && <NavBar />}
     </Router>
   )
 }

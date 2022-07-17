@@ -30,7 +30,7 @@ export const AppProvider = (props) => {
 
     const contextValue = {
         showContactPage: showContact,
-        showNav:showNav,
+        showNav: showNav,
         showContactHandler: showContactHandler,
         hideContactHandler: hideContactHandler,
         showNavHandler: showNavHandler,
