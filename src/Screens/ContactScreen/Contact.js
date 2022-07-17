@@ -1,4 +1,4 @@
-import React,{useContext} from 'react'
+import React, { useContext } from 'react'
 import './Contact.css'
 import { Icon } from '@iconify/react';
 import AppContext from '../../Store/Context';
@@ -22,14 +22,14 @@ function Contact() {
 
                 <label>Email Address </label>
                 <input placeholder='Enter your firstname' />
-                
+
                 <label>Tell Us What You Need Help With</label>
                 <textarea placeholder='Enter a topic,like channel problem' />
             </div>
             <div id='contact-overlay-btn'>
                 <Button>send now</Button>
             </div>
-       
+
             <i onClick={hideContactHandler} id='home-contact-arrow'>
                 <Icon icon="bi:arrow-down" color="#271ac1" rotate={3} />
             </i>

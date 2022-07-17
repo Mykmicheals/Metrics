@@ -212,3 +212,17 @@
         margin-left: 2rem;
     }
 }
+
+#arrow-up-icon{
+position: fixed;
+bottom: 20px;
+right: 20px;
+font-size: 2rem;
+background: #20376A;
+color: black;
+cursor: pointer;
+border-radius: 2rem;
+border: none;
+box-shadow: 0 5px 10px #ccc;
+padding: 7px;
+}

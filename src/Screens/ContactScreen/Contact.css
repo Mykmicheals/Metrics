@@ -66,3 +66,42 @@
     margin-top: 2rem;
     text-transform: uppercase;
 }
+
+
+
+@media (max-width:768px) {
+    .home-contact {
+        padding: 2rem;
+        margin: auto;
+        width: 90%;
+
+    }
+
+    .home-contact-form input {
+        width: 11rem;
+        height: 0.5rem;
+
+    }
+
+    #home-contact-arrow {
+        left: -10%;
+    }
+
+    .home-contact textarea {
+        height: 2rem;
+        margin-top: 2rem;
+        width: 11rem;
+
+    }
+
+    #contact-header {
+        width: 80%;
+        font-weight: 300;
+    }
+    #contact-overlay-btn {
+        width: 60%;
+     font-size: 0.9rem;
+     font-weight: 100;
+    }
+    
+}

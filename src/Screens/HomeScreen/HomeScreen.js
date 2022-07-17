@@ -8,15 +8,15 @@ import HomeForm from './HomeForm'
 import TimeCard from './TimeCard'
 
 function HomeScreen() {
+    
     const appCtx = useContext(AppContext)
     const showContact = appCtx.showContactPage
     const showNav = appCtx.showNav
     const blurStyle = showContact || showNav ? 'blur-effect' : ''
 
-
     return (
         <div className='everything-home'>
-            <div className={`home-screen ${blurStyle}`}>
+           {! appCtx.showNav && <div className={`home-screen ${blurStyle}`}>
                 <Header />
                 <div className='homescreen-text'>
                     <div className='home-circle-1'></div>
@@ -31,13 +31,14 @@ function HomeScreen() {
 
                 <Footer />
 
-            </div>
+            </div>}
             <div className='contact-overlay'>
                 {showContact && <Contact />}
             </div>
             {appCtx.showNav && <NavBar />}
 
-            {/* <div className='home-semi-circle'></div> */}
+        
+         
         </div>
 
     )

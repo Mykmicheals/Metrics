@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { Fragment, useContext, useEffect,useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen/HomeScreen';
@@ -7,31 +7,43 @@ import GithubPage from './Screens/GithubScreen/GithubFetchLogic';
 import AboutPage from './Screens/AboutScreen/AboutPage';
 import NavBar from './Components/NavBar';
 import AppContext from './Store/Context';
+import Loading from './Components/Loading';
 
 
 
 
 function App() {
 
-const appCtx = useContext(AppContext)
+  const [load, setLoad] = useState(false)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoad(true)
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [])
+
+  const appCtx = useContext(AppContext)
 
   return (
     <Router>
-      <Switch>
-      <Route path='/comingsoon' exact>
-        <HomeScreen />
-      </Route>
-      <Route Route path='/blog' >
-        <BlogScreen />
-      </Route>
-      <Route path='/github'>
-        <GithubPage />
-      </Route>
-      <Route path='/about'>
-      <AboutPage />
-      </Route>
-        <Redirect from="*" to="/comingsoon" />
-      </Switch>
+      {load ? <Fragment>
+      {!appCtx.showNav &&  <Switch>
+          <Route path='/comingsoon' exact>
+            <HomeScreen />
+          </Route>
+          <Route Route path='/blog' >
+            <BlogScreen />
+          </Route>
+          <Route path='/github'>
+            <GithubPage />
+          </Route>
+          <Route path='/about'>
+            <AboutPage />
+          </Route>
+          <Redirect from="*" to="/comingsoon" />
+        </Switch> }
+      </Fragment> : <Loading />}
+      
       {appCtx.showNav && <NavBar />}
     </Router>
   )

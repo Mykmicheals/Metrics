@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState, useEffect, useContext } from 'react'
 import './BlogScreenStyle.css'
 import { Icon } from '@iconify/react';
 import _ from "lodash";
@@ -6,12 +6,37 @@ import BlogCard from './BlogCard';
 import manImage from '../../assets/images/work.png'
 import Button from '../../Components/Button';
 import Header from '../../Components/Header';
+import AppContext from '../../Store/Context';
 
 
 function BlogScreen() {
-    return (
 
-        <Fragment>
+    const [visible, setVisible] = useState(false)
+    const appCtx = useContext(AppContext)
+    const showContact = appCtx.showContactPage
+    const showNav = appCtx.showNav
+    const blurStyle = showContact || showNav ? 'blur-effect' : ''
+
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 300) {
+                setVisible(true);
+            } else {
+                setVisible(false);
+            }
+        });
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    return (
+        <div className={blurStyle}>
             <Header />
             <div className='blog-screen'>
                 <div className='blog-bottom'>
@@ -77,8 +102,11 @@ function BlogScreen() {
                 </div>
 
             </div>
-        </Fragment>
-       
+            {visible && <div id='arrow-up-icon' onClick={scrollToTop}>
+                <Icon icon="bi:arrow-up" />
+            </div>}
+        </div>
+
     )
 }
 
