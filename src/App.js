@@ -8,6 +8,7 @@ import AboutPage from './Screens/AboutScreen/AboutPage';
 import NavBar from './Components/NavBar';
 import AppContext from './Store/Context';
 import Loading from './Components/Loading';
+import BlogEach from './Screens/BlogScreen/BlogEach';
 
 
 
@@ -39,6 +40,10 @@ function App() {
           </Route>
           <Route path='/about'>
             <AboutPage />
+          </Route>
+
+          <Route path='/details'>
+            <BlogEach />
           </Route>
           <Redirect from="*" to="/comingsoon" />
         </Switch> }

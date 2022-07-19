@@ -1,8 +1,7 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState} from 'react'
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
 import AppContext from '../Store/Context';
-
 
 function Header() {
     const [isMobile, setIsMobile] = useState(false)

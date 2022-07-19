@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import './BlogScreenStyle.css'
 import { Icon } from '@iconify/react';
 import _ from "lodash";
