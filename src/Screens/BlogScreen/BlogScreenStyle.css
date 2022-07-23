@@ -226,3 +226,13 @@ border: none;
 box-shadow: 0 5px 10px #ccc;
 padding: 7px;
 }
+
+.blog-details-image-section {
+  margin:2rem auto;  
+}
+
+.blog-details-image-section img{
+    width: 40rem;
+    height: 20rem;
+    text-align: center;
+}
