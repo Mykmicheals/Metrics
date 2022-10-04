@@ -1,3 +1,59 @@
+# Metrics
+
+This is website was created to reproduce a figma desing
+
+## Clone the project
+
+- In your preffered folder, open your terminal and type the command
+
+`` git clone https://github.com/Mykmicheals/gmailClone.git ``
+
+- After cloning the project unzip the folder
+
+- Navigate to the folder using
+
+`` cd my-app ``
+
+- Install all dependencies using
+
+`` npm install ``
+
+- to run project on your localhost use the command
+
+`` npm start ``
+
+
+## The UI
+
+### Homepage
+
+![metrics1](https://user-images.githubusercontent.com/88559940/193781047-e3693bad-0394-49ad-b5b8-d20f64a566c1.png)
+
+### Contact Overlay
+
+![overlayHeader](https://user-images.githubusercontent.com/88559940/193781104-6585f480-3fce-4edb-a98e-d16e0a45fd6c.png)
+
+### About Page
+
+![about1](https://user-images.githubusercontent.com/88559940/193781154-23aec277-9263-416c-bbe8-7d1b5a9b9626.png)
+
+![about2](https://user-images.githubusercontent.com/88559940/193781171-652de757-c900-440f-844d-18510318eccc.png)
+
+![about3](https://user-images.githubusercontent.com/88559940/193781210-6936a3c8-0f3c-44a4-bf7a-cd1da042c36e.png)
+
+### Blog Page
+
+![blog1](https://user-images.githubusercontent.com/88559940/193781321-493d479e-ad52-4393-969e-6aee2f1c5da0.png)
+
+![blog2](https://user-images.githubusercontent.com/88559940/193781351-9a6bc4c5-8976-4d66-aa5a-67e240b8dc5e.png)
+
+
+![blog3](https://user-images.githubusercontent.com/88559940/193781278-0602f226-b705-477f-bd02-b13b378b5b64.png)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
