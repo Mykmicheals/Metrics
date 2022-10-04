@@ -23,6 +23,19 @@ This is website was created to reproduce a figma desing
 `` npm start ``
 
 
+### Project folder structure
+
+![metricfolder](https://user-images.githubusercontent.com/88559940/193783931-9a7fb0ed-0f2a-4346-a28a-f04a96251633.png)
+
+
+- The public folder contains the index.html and the manifest.json file
+- The src folder is the most important folder of this app. It contains all building block of the app
+- inside the src folder we have the assets folder, the assets folder is used to store the images and the icons
+- component folder is used to store the reusable react components
+- Screens folder stores the various components for a particular page. I.e homeScreen stores all react components for the homepage
+- Store folder is used to store the our app wide state for state management 
+
+
 ## The UI
 
 ### Homepage
@@ -50,7 +63,14 @@ This is website was created to reproduce a figma desing
 
 ![blog3](https://user-images.githubusercontent.com/88559940/193781278-0602f226-b705-477f-bd02-b13b378b5b64.png)
 
+### Libraries used for the Project
 
+- React
+- React Rounter 
+- Html
+- Scss
+
+### Building Procedures
 
 
 
