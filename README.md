@@ -6,7 +6,7 @@ This is website was created to reproduce a figma design
 
 - In your preffered folder, open your terminal and type the command
 
-## `` git clone https://github.com/Mykmicheals/gmailClone.git ``
+### `` git clone https://github.com/Mykmicheals/gmailClone.git ``
 
 - After cloning the project unzip the folder
 
