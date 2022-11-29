@@ -2,7 +2,7 @@
 
 This is website was created to reproduce a figma design
 
-## Clone the project
+## Clone the project.
 
 - In your preffered folder, open your terminal and type the command
 
